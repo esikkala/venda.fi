@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from 'next/image';
 import styled from 'styled-components';
 import { I18nContext } from '../contexts/I18nContext';
+import VendaLogo from '../public/venda_logo_cleaned.svg';
 
 const Nav = styled.nav`
   height: 170px;
@@ -19,8 +20,17 @@ const LinkContent = styled.a`
   font-weight: 600;
   font-size: 20px;
   color: ${({ theme }) => theme.colors.gray};
-  margin-left: ${({ theme }) => theme.gap * 4}px;
   text-decoration: unset;
+`;
+
+const LogoContainer = styled.a`
+  width: 300px;
+  margin-right: ${({ theme }) => theme.gap * 4}px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1;
 `;
 
 /**
@@ -31,6 +41,9 @@ function Header() {
   const { header } = localizations;
   return (
     <Nav>
+      <LogoContainer>
+        <Image src={VendaLogo} alt="Venda logo" />
+      </LogoContainer>
       <Link href="/marketing-communications" passHref><LinkContent>{header.marketingCommmunications}</LinkContent></Link>
       <Link href="/translations" passHref><LinkContent>{header.translations}</LinkContent></Link>
       <Link href="/outsource-your-project" passHref><LinkContent>{header.outsourceYourProject}</LinkContent></Link>
