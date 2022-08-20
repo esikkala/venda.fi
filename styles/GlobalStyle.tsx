@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     min-width: 1680px;
     overflow-x: auto;
-    background-color: ${(props) => props.theme.colors.background}; ;
+    font-family: 'Helvetica', 'Arial', sans-serif;
   }
 `;
 

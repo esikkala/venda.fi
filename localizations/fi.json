@@ -7,6 +7,31 @@
         "contact": "YHTEYSTIEDOT"
     },
     "frontPage": {
-        "heading": "Uutta virtaa markkinointiviestintään."
+        "heading": "Uutta virtaa markkinointiviestintään.",
+        "firstParagraph": "Venda on hyvin verkostoitunut kansainvälinen tiimi. Meillä kaikilla on pitkä tausta markkinoinnin ja mainonnan maailmassa. Asiakkaillemme tuotamme raikasta ja luovaa markkinointiviestintää erittäin kilpailukykyiseen hintaan.",
+        "secondParagraph": "Projektijohto, sisällöntuotanto ja asiakaspalvelu ovat vankoissa ja kokeneissa käsissä. Luovuudesta ja luotettavuudesta emme tingi ja aikataulut pitävät varmasti.",
+        "lastParagraph": "Käännä kurssisi!"
+    },
+    "marketingCommunications": {
+        "heading": "Kaipaatko raikkaita näkemyksiä ja luovaa suunnitteluapua?",
+        "firstParagraph": "Ammattitaito, kansainvälisyys, joustavuus ja luotettavuus ovat hyveitämme. Meillä on raikkaita näkemyksiä, kiistaton ammattitaito ja hyviä referenssejä.",
+        "listHeading": "Palvelupalettimme on laaja.",
+        "list": [
+            "konseptisuunnittelu",
+            "graafinen suunnittelu",
+            "kuvitustyöt",
+            "sisällöntuotanto",
+            "asiakaslehdet",
+            "toimintakertomukset",
+            "esitteet",
+            "videotuotanto",
+            "valokuvaus",
+            "nettisivujen suunnittelu ja koodaus"
+        ]
+    },
+    "translationServices": {
+        "heading": "Teemme käännöstyöt vankalla ammattitaidolla ja suoraan painokelpoiseen tyyliin.",
+        "firstParagraph": "Kielivalikoimamme on laaja ja hallitsemme mutkikkaatkin käännösprojektit.",
+        "secondParagraph": "Markkinointihenkiset ja oivallusta vaativat mainostekstit ovat erikoisalaamme, mutta tuttuja ovat myös monet tekniset alat, erityisesti autoala."
     }
 }
