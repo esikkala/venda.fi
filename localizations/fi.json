@@ -33,5 +33,31 @@
         "heading": "Teemme käännöstyöt vankalla ammattitaidolla ja suoraan painokelpoiseen tyyliin.",
         "firstParagraph": "Kielivalikoimamme on laaja ja hallitsemme mutkikkaatkin käännösprojektit.",
         "secondParagraph": "Markkinointihenkiset ja oivallusta vaativat mainostekstit ovat erikoisalaamme, mutta tuttuja ovat myös monet tekniset alat, erityisesti autoala."
+    },
+    "outsourceYourProject": {
+        "heading": "Venda on markkinoinnin auttava käsi, kun hommat vyöryvät yli.",
+        "headingSecondRow": "Ulkoistamalla saavutat enemmän ja säästät kustannuksissa.",
+        "firstParagraph": "Kiire tai pula tekijöistä ei ole syy jättää suunnitelmia toteuttamatta. Projektit voi myös ulkoistaa osaavalle ammattilaiselle. Meillä langat pysyvät käsissä ja työ etenee aikataulun mukaisesti. Ulkoistamalla saat käyttöösi kokonaisen tiimin ammattitaidon – kustannustehokkaasti.",
+        "secondParagraph": "Ei uusia kiinteitä kustannuksia, vaan tehokas ja järkevä tapa päästä tavoitteisiin nopeasti."
+    },
+    "briefly": {
+        "heading": "Contact Venda Finland when you need:",
+        "list": [
+            "Help with marketing services and contacts in Finland",
+            "Professional project director for your marketing issues in Finland or Baltic markets",
+            "Translation services",
+            "Copywriter in Finnish, Estonian",
+            "Skilled and creative advertising agency services at very attractive price",
+            "Help with new business contacting in Finland and in Estonia"
+        ]
+    },
+    "contact": {
+        "heading": "Venda Finland Oy",
+        "name": "Hanna Autio",
+        "phone": "+358 40 533 9983",
+        "email": "hanna.autio@vendafinland.fi",
+        "address": "Kelohongantie 8 F",
+        "postOffice": "02120 Espoo",
+        "country": "Finland"
     }
 }

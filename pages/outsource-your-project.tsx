@@ -8,24 +8,26 @@ import {
   PageContainer,
   PageContent,
   BackgroundImage,
-  LeftLayout,
+  Layout,
   TextContainer,
   H1,
   P,
-  Bold,
   HeaderBackground,
-  Ul,
-  Li,
 } from '../components/Common';
 import Header from '../components/Header';
 
-const OffSetBackgroundImage = styled(BackgroundImage)`
-  background-position: 0 -950px;
+const LeftLayout = styled(Layout)`
+  align-items: flex-start;
+  padding-left: 200px;
 `;
 
-function MarketingCommunications(): JSX.Element {
+const OffSetBackgroundImage = styled(BackgroundImage)`
+  background-position: 0 -2800px;
+`;
+
+function OutsourceYourProject(): JSX.Element {
   const { localizations } = useContext(I18nContext);
-  const { marketingCommunications } = localizations;
+  const { outsourceYourProject } = localizations;
 
   return (
     <RootContainer>
@@ -42,21 +44,16 @@ function MarketingCommunications(): JSX.Element {
             <LeftLayout>
               <TextContainer>
                 <H1>
-                  {marketingCommunications.heading}
+                  {outsourceYourProject.heading}
+                  <br />
+                  {outsourceYourProject.headingSecondRow}
                 </H1>
                 <P>
-                  {marketingCommunications.firstParagraph}
+                  {outsourceYourProject.firstParagraph}
                 </P>
-                <Bold>
-                  {marketingCommunications.listHeading}
-                </Bold>
-                <Ul>
-                  {marketingCommunications.list.map((item: string) => (
-                    <Li key={`list-${item}`}>
-                      {item}
-                    </Li>
-                  ))}
-                </Ul>
+                <P>
+                  {outsourceYourProject.secondParagraph}
+                </P>
               </TextContainer>
             </LeftLayout>
           </PageContent>
@@ -66,4 +63,4 @@ function MarketingCommunications(): JSX.Element {
   );
 }
 
-export default MarketingCommunications;
+export default OutsourceYourProject;

@@ -42,6 +42,11 @@ export const Layout = styled.div`
   margin-top: 4rem;
 `;
 
+export const LeftLayout = styled(Layout)`
+  align-items: flex-start;
+  padding-left: 200px;
+`;
+
 export const TextContainer = styled.div`
   margin-top: 4rem;
   font-size: 18px;
@@ -75,6 +80,36 @@ export const HeaderBackground = styled.div`
   padding-bottom: 2rem;
 `;
 
-export const LastP = styled(P)`
+export const Bold = styled(P)`
   font-weight: bold;
+`;
+
+export const Ul = styled.ul`
+  list-style-position: inside;
+  padding-left: 0;
+`;
+
+export const Li = styled.li`
+  &::marker {
+   color: ${({ theme }) => theme.colors.orange};
+  }
+  margin-bottom: 0.5rem;
+`;
+
+export const Spacer = styled.div`
+  height: 4rem;
+`;
+
+export const SpacerSmall = styled.div`
+  height: 2rem;
+`;
+
+export const ContactHeading = styled(Bold)`
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+`;
+
+export const ContactInfo = styled(P)`
+  margin-top: 0;
+  margin-bottom: 0.25rem;
 `;

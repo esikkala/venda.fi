@@ -11,21 +11,22 @@ import {
   LeftLayout,
   TextContainer,
   H1,
-  P,
-  Bold,
   HeaderBackground,
   Ul,
   Li,
+  ContactHeading,
+  ContactInfo,
+  Spacer,
 } from '../components/Common';
 import Header from '../components/Header';
 
 const OffSetBackgroundImage = styled(BackgroundImage)`
-  background-position: 0 -950px;
+  background-position: 0 -3700px;
 `;
 
-function MarketingCommunications(): JSX.Element {
+function Briefly(): JSX.Element {
   const { localizations } = useContext(I18nContext);
-  const { marketingCommunications } = localizations;
+  const { briefly, contact } = localizations;
 
   return (
     <RootContainer>
@@ -42,21 +43,28 @@ function MarketingCommunications(): JSX.Element {
             <LeftLayout>
               <TextContainer>
                 <H1>
-                  {marketingCommunications.heading}
+                  {briefly.heading}
                 </H1>
-                <P>
-                  {marketingCommunications.firstParagraph}
-                </P>
-                <Bold>
-                  {marketingCommunications.listHeading}
-                </Bold>
                 <Ul>
-                  {marketingCommunications.list.map((item: string) => (
+                  {briefly.list.map((item: string) => (
                     <Li key={`list-${item}`}>
                       {item}
                     </Li>
                   ))}
                 </Ul>
+                <Spacer />
+                <ContactHeading>
+                  {contact.heading}
+                </ContactHeading>
+                <ContactInfo>
+                  {contact.name}
+                </ContactInfo>
+                <ContactInfo>
+                  {contact.phone}
+                </ContactInfo>
+                <ContactInfo>
+                  {contact.email}
+                </ContactInfo>
               </TextContainer>
             </LeftLayout>
           </PageContent>
@@ -66,4 +74,4 @@ function MarketingCommunications(): JSX.Element {
   );
 }
 
-export default MarketingCommunications;
+export default Briefly;

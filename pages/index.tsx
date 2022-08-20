@@ -12,7 +12,7 @@ import {
   TextContainer,
   H1,
   P,
-  LastP,
+  Bold,
 } from '../components/Common';
 import Header from '../components/Header';
 import FrontPageLogo from '../public/tehokas_luova.svg';
@@ -39,9 +39,9 @@ function Home(): JSX.Element {
                 <P>
                   {frontPage.secondParagraph}
                 </P>
-                <LastP>
+                <Bold>
                   {frontPage.lastParagraph}
-                </LastP>
+                </Bold>
               </TextContainer>
             </Layout>
           </PageContent>
