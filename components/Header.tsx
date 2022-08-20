@@ -57,10 +57,10 @@ function Header() {
   const { pathname } = router;
   return (
     <Nav>
-      <Link href="/">
+      <Link href="/" passHref>
         <LogoContainer>
           {/* eslint-disable @next/next/no-img-element */}
-          <img src="/venda.fi/venda_logo.svg" width={131} height={170} alt="Venda logo" />
+          <img src="venda_logo.svg" width={131} height={170} alt="Venda logo" />
         </LogoContainer>
       </Link>
       <Link href="/marketing-communications" passHref>
