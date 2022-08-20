@@ -68,7 +68,7 @@ export const P = styled.p`
 
 export const BackgroundImage = styled.div`
   width: 100%;
-  background-image:url('../public/background.png');
+  background-image:url('/venda.fi/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;

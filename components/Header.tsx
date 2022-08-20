@@ -60,7 +60,7 @@ function Header() {
       <Link href="/">
         <LogoContainer>
           {/* eslint-disable @next/next/no-img-element */}
-          <img src="../public/venda_logo.svg" width={131} height={170} alt="Venda logo" />
+          <img src="/venda.fi/venda_logo.svg" width={131} height={170} alt="Venda logo" />
         </LogoContainer>
       </Link>
       <Link href="/marketing-communications" passHref>
