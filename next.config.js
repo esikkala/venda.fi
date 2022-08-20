@@ -5,7 +5,8 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ['messukeskus.studio.crasman.fi'],
+    loader: 'akamai',
+    path: '',
   },
 }
 
