@@ -1,7 +1,6 @@
 import React, {
   useContext,
 } from 'react';
-import Image from 'next/image';
 import { I18nContext } from '../contexts/I18nContext';
 import {
   RootContainer,
@@ -15,7 +14,6 @@ import {
   Bold,
 } from '../components/Common';
 import Header from '../components/Header';
-import FrontPageLogo from '../public/tehokas_luova.svg';
 
 function Home(): JSX.Element {
   const { localizations } = useContext(I18nContext);
@@ -28,7 +26,8 @@ function Home(): JSX.Element {
           <PageContent>
             <Header />
             <Layout>
-              <Image src={FrontPageLogo} width={391} height={167} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/tehokas_luova.svg" width={391} height={167} alt="Tehokas logo" />
               <TextContainer>
                 <H1>
                   {frontPage.heading}

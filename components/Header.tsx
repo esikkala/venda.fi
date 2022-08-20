@@ -1,10 +1,8 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styled, { css } from 'styled-components';
 import { I18nContext } from '../contexts/I18nContext';
-import VendaLogo from '../public/venda_logo.svg';
 
 const Nav = styled.nav`
   height: 170px;
@@ -61,7 +59,8 @@ function Header() {
     <Nav>
       <Link href="/">
         <LogoContainer>
-          <Image src={VendaLogo} width={131} height={170} alt="Venda logo" />
+          {/* eslint-disable @next/next/no-img-element */}
+          <img src="/venda_logo.svg" width={131} height={170} alt="Venda logo" />
         </LogoContainer>
       </Link>
       <Link href="/marketing-communications" passHref>
