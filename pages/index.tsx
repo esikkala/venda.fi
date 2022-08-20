@@ -27,7 +27,7 @@ function Home(): JSX.Element {
             <Header />
             <Layout>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/tehokas_luova.svg" width={391} height={167} alt="Tehokas logo" />
+              <img src="../public/tehokas_luova.svg" width={391} height={167} alt="Tehokas logo" />
               <TextContainer>
                 <H1>
                   {frontPage.heading}

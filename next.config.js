@@ -4,6 +4,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  basePath: '/venda.fi',
 }
 
 module.exports = nextConfig
