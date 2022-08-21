@@ -13,6 +13,7 @@ import {
   H1,
   P,
   HeaderBackground,
+  Bold,
 } from '../components/Common';
 import Header from '../components/Header';
 
@@ -22,7 +23,17 @@ const LeftLayout = styled(Layout)`
 `;
 
 const OffSetBackgroundImage = styled(BackgroundImage)`
-  background-position: 0 -2800px;
+  background-position: 0 -2700px;
+`;
+
+const FirstRow = styled(H1)`
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+`;
+
+const SecondRow = styled(Bold)`
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 `;
 
 function OutsourceYourProject(): JSX.Element {
@@ -43,11 +54,12 @@ function OutsourceYourProject(): JSX.Element {
           <PageContent>
             <LeftLayout>
               <TextContainer>
-                <H1>
+                <FirstRow>
                   {outsourceYourProject.heading}
-                  <br />
+                </FirstRow>
+                <SecondRow>
                   {outsourceYourProject.headingSecondRow}
-                </H1>
+                </SecondRow>
                 <P>
                   {outsourceYourProject.firstParagraph}
                 </P>

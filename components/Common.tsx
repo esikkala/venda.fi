@@ -1,19 +1,5 @@
 import styled from 'styled-components';
 
-export const HorizontalLine = styled.hr`
-  border: none;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
-  color: ${({ theme }) => theme.colors.lightGrey};
-  height: 1px;
-  margin-top: 2.75rem;
-  margin-bottom: 2.75rem;
-`;
-
-export const Break = styled.div`
-  flex-basis: 100%;
-  height: 0;
-`;
-
 export const RootContainer = styled.div`
   height: 100vh;
   display: flex;
@@ -27,12 +13,6 @@ export const PageContainer = styled.div`
 
 export const PageContent = styled.div`
   width: 1420px;
-`;
-
-export const PageHeading = styled.h1`
-    ${({ theme }) => theme.fonts.headers.desktop.h1} 
-    margin-top: 1rem;
-    margin-bottom: 0;
 `;
 
 export const Layout = styled.div`
@@ -50,11 +30,13 @@ export const LeftLayout = styled(Layout)`
 export const TextContainer = styled.div`
   margin-top: 4rem;
   font-size: 18px;
-  width: 700px;
+  letter-spacing: 0.7px;
+  width: 740px;
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 export const H1 = styled.h1`
-  font-weight: bold;
+  font-weight: 700;
   font-size: inherit;
   text-align: left;
   margin-bottom:  1.5rem;
@@ -62,8 +44,8 @@ export const H1 = styled.h1`
 
 export const P = styled.p`
   line-height: 1.75rem;
-  letter-spacing: 0.5px;
   margin-bottom:  1.5rem;
+  font-weight: 300;
 `;
 
 export const BackgroundImage = styled.div`
