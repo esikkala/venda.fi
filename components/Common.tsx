@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import backgroundImage from '../public/background.png';
 
 export const RootContainer = styled.div`
-  height: 100vh;
   display: flex;
   justify-content: center;
+  background-color: #eef0ee;
 `;
 
 export const PageContainer = styled.div`
@@ -19,7 +20,7 @@ export const Layout = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 4rem;
+  padding-top: 190px;
 `;
 
 export const LeftLayout = styled(Layout)`
@@ -42,6 +43,13 @@ export const H1 = styled.h1`
   margin-bottom:  1.5rem;
 `;
 
+export const H2 = styled.h2`
+  font-weight: 700;
+  font-size: inherit;
+  text-align: left;
+  margin-bottom:  1.5rem;
+`;
+
 export const P = styled.p`
   line-height: 1.75rem;
   margin-bottom:  1.5rem;
@@ -49,17 +57,13 @@ export const P = styled.p`
 `;
 
 export const BackgroundImage = styled.div`
-  width: 100%;
-  background-image:url('background.png');
+  position: relative;
+  background-image:url(${backgroundImage.src});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  max-width: 1700px;
-`;
-
-export const HeaderBackground = styled.div`
-  background-color: rgba(255, 255, 255, 0.5);
-  padding-bottom: 2rem;
+  width: 1700px;
+  height: fit-content;
 `;
 
 export const Bold = styled(P)`
@@ -93,5 +97,15 @@ export const ContactHeading = styled(Bold)`
 
 export const ContactInfo = styled(P)`
   margin-top: 0;
+  margin-bottom: 0.25rem;
+`;
+
+export const FirstRow = styled(H1)`
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+`;
+
+export const SecondRow = styled(Bold)`
+  margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 `;
