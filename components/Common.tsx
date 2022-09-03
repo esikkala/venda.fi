@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundImage from '../public/background.png';
+// import backgroundImage from '../public/background.png';
 
 export const RootContainer = styled.div`
   display: flex;
@@ -58,7 +58,7 @@ export const P = styled.p`
 
 export const BackgroundImage = styled.div`
   position: relative;
-  background-image:url(${backgroundImage.src});
+  background-image: url('background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;

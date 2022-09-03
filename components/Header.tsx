@@ -75,27 +75,27 @@ function Header() {
           <img src="venda_logo.svg" width={111} height={144} alt="Venda logo" />
         </LogoContainer>
       </Link>
-      <Link href="#marketing-communications" passHref>
+      <Link href="/#marketing-communications" passHref>
         <LinkContent isActive={pathname === '/marketing-communications'}>
           {header.marketingCommmunications}
         </LinkContent>
       </Link>
-      <Link href="#translation-services" passHref>
+      <Link href="/#translation-services" passHref>
         <LinkContent isActive={pathname === '/translation-services'}>
           {header.translations}
         </LinkContent>
       </Link>
-      <Link href="#outsource-your-project" passHref>
+      <Link href="/#outsource-your-project" passHref>
         <LinkContent isActive={pathname === '/outsource-your-project'}>
           {header.outsourceYourProject}
         </LinkContent>
       </Link>
-      <Link href="#briefly" passHref>
+      <Link href="/#briefly" passHref>
         <LinkContent isActive={pathname === '/briefly'}>
           {header.briefly}
         </LinkContent>
       </Link>
-      <Link href="#contact" passHref>
+      <Link href="/#contact" passHref>
         <LinkContent isActive={pathname === '/contact'}>
           {header.contact}
         </LinkContent>
