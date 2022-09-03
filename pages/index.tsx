@@ -25,7 +25,7 @@ import {
   SpacerSmall,
 } from '../components/Common';
 import Header, { HeaderBackground } from '../components/Header';
-import TehokasImage from '../public/tehokas_luova.svg';
+// import TehokasImage from '../public/tehokas_luova.svg';
 
 const Page = styled.div`
   height: 100vh;
@@ -54,7 +54,7 @@ function Home(): JSX.Element {
               <Layout>
                 <SpacerSmall />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={TehokasImage.src} width={469} height={200} alt="Tehokas logo" />
+                <img src="tehokas_luova.svg" width={469} height={200} alt="Tehokas logo" />
                 <TextContainer>
                   <H1>
                     {frontPage.heading}

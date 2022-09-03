@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled, { css } from 'styled-components';
 import { I18nContext } from '../contexts/I18nContext';
-import vendaLogo from '../public/venda_logo.svg';
+// import vendaLogo from '../public/venda_logo.svg';
 
 const Nav = styled.nav`
   position: fixed;
@@ -72,7 +72,7 @@ function Header() {
       <Link href="/" passHref>
         <LogoContainer>
           {/* eslint-disable @next/next/no-img-element */}
-          <img src={vendaLogo.src} width={111} height={144} alt="Venda logo" />
+          <img src="venda_logo.svg" width={111} height={144} alt="Venda logo" />
         </LogoContainer>
       </Link>
       <Link href="#marketing-communications" passHref>
