@@ -50,7 +50,7 @@ function Home(): JSX.Element {
         </HeaderBackground>
         <PageContainer>
           <PageContent>
-            <Page>
+            <Page id="home">
               <Layout>
                 <SpacerSmall />
                 {/* eslint-disable-next-line @next/next/no-img-element */}

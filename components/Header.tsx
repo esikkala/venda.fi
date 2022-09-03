@@ -68,8 +68,7 @@ function Header() {
   const { pathname } = router;
   return (
     <Nav>
-      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-      <a href="/">
+      <a href="#home">
         <LogoContainer>
           {/* eslint-disable @next/next/no-img-element */}
           <img src="venda_logo.svg" width={111} height={144} alt="Venda logo" />
