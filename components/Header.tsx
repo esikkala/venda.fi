@@ -68,12 +68,10 @@ function Header() {
   const { pathname } = router;
   return (
     <Nav>
-      <a href="#home">
-        <LogoContainer>
-          {/* eslint-disable @next/next/no-img-element */}
-          <img src="venda_logo.svg" width={111} height={144} alt="Venda logo" />
-        </LogoContainer>
-      </a>
+      <LogoContainer href="#home">
+        {/* eslint-disable @next/next/no-img-element */}
+        <img src="venda_logo.svg" width={111} height={144} alt="Venda logo" />
+      </LogoContainer>
       <LinkContent href="#marketing-communications" isActive={pathname.includes('#marketing-communications')}>
         {header.marketingCommmunications}
       </LinkContent>
