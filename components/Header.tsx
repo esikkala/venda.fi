@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled, { css } from 'styled-components';
 import { I18nContext } from '../contexts/I18nContext';
@@ -69,37 +68,28 @@ function Header() {
   const { pathname } = router;
   return (
     <Nav>
-      <Link href="/" passHref>
+      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+      <a href="/">
         <LogoContainer>
           {/* eslint-disable @next/next/no-img-element */}
           <img src="venda_logo.svg" width={111} height={144} alt="Venda logo" />
         </LogoContainer>
-      </Link>
-      <Link href="/#marketing-communications" passHref>
-        <LinkContent isActive={pathname === '/marketing-communications'}>
-          {header.marketingCommmunications}
-        </LinkContent>
-      </Link>
-      <Link href="/#translation-services" passHref>
-        <LinkContent isActive={pathname === '/translation-services'}>
-          {header.translations}
-        </LinkContent>
-      </Link>
-      <Link href="/#outsource-your-project" passHref>
-        <LinkContent isActive={pathname === '/outsource-your-project'}>
-          {header.outsourceYourProject}
-        </LinkContent>
-      </Link>
-      <Link href="/#briefly" passHref>
-        <LinkContent isActive={pathname === '/briefly'}>
-          {header.briefly}
-        </LinkContent>
-      </Link>
-      <Link href="/#contact" passHref>
-        <LinkContent isActive={pathname === '/contact'}>
-          {header.contact}
-        </LinkContent>
-      </Link>
+      </a>
+      <LinkContent href="#marketing-communications" isActive={pathname.includes('#marketing-communications')}>
+        {header.marketingCommmunications}
+      </LinkContent>
+      <LinkContent href="#translation-services" isActive={pathname.includes('#translation-services')}>
+        {header.translations}
+      </LinkContent>
+      <LinkContent href="#outsource-your-project" isActive={pathname.includes('##outsource-your-project')}>
+        {header.outsourceYourProject}
+      </LinkContent>
+      <LinkContent href="#briefly" isActive={pathname.includes('#contact')}>
+        {header.briefly}
+      </LinkContent>
+      <LinkContent href="#contact" isActive={pathname.includes('#contact')}>
+        {header.contact}
+      </LinkContent>
     </Nav>
   );
 }
