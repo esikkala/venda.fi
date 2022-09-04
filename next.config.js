@@ -7,7 +7,8 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  assetPrefix: isProd ? 'https://esikkala.github.io/venda.fi' : undefined
+  basePath: isProd ? '/venda.fi': undefined,
+  assetPrefix: isProd ? '/venda.fi' : undefined,
 }
 
 module.exports = nextConfig
