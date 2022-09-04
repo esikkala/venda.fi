@@ -25,10 +25,12 @@ import {
   SpacerSmall,
 } from '../components/Common';
 import Header, { HeaderBackground } from '../components/Header';
-// import TehokasImage from '../public/tehokas_luova.svg';
 
 const Page = styled.div`
   height: 100vh;
+  @media screen and ( max-height: 800px ) {
+    height: fit-content;
+  }
 `;
 
 function Home(): JSX.Element {
