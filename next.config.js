@@ -9,7 +9,6 @@ const nextConfig = {
   },
   basePath: isProd ? '/venda.fi': undefined,
   assetPrefix: isProd ? '/venda.fi' : undefined,
-  trailingSlash: true,
 }
 
 module.exports = nextConfig
