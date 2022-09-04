@@ -62,7 +62,6 @@ function Header() {
   const { localizations } = useContext(I18nContext);
   const { header } = localizations;
   const [activePage, setActivePage] = useState('#home');
-  console.log(activePage);
 
   const handleScroll = () => {
     setActivePage(window.location.hash);
