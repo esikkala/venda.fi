@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const RootContainer = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #eef0ee;
+  /* background-color: #eef0ee; */
 `;
 
 export const PageContainer = styled.div`
@@ -62,8 +62,7 @@ export const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  width: 1700px;
-  height: fit-content;
+  width: 100%;
 `;
 
 export const Bold = styled(P)`
