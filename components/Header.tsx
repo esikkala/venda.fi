@@ -47,7 +47,10 @@ function Header() {
 
   return (
     <Nav>
-      <LogoContainer href="#home">
+      <LogoContainer
+        href="#home"
+        onClick={(event) => handleNavlinkOnClick(event, '#home')}
+      >
         {/* eslint-disable @next/next/no-img-element */}
         <img src="venda_logo.svg" width={111} height={144} alt="Venda logo" />
       </LogoContainer>
