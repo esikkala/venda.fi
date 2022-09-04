@@ -1,6 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react';
-import styled, { css } from 'styled-components';
+import React, {
+  useContext, useState,
+} from 'react';
+import styled from 'styled-components';
 import { I18nContext } from '../contexts/I18nContext';
+import NavLink from './NavLink';
 // import vendaLogo from '../public/venda_logo.svg';
 
 const Nav = styled.nav`
@@ -22,31 +25,6 @@ export const HeaderBackground = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
 `;
 
-const LinkColor = css`
-  color: ${({ theme }) => theme.colors.gray};
-`;
-
-const LinkColorActive = css`
-  color: ${({ theme }) => theme.colors.orange};
-`;
-
-// https://nextjs.org/docs/api-reference/next/link#if-the-child-is-a-custom-component-that-wraps-an-a-tag
-const LinkContent = styled.a<{ pageId: string, activePage: string }>`
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  font-weight: 600;
-  font-size: 17px;
-  letter-spacing: 1px;
-  text-decoration: unset;
-  
-    
-  ${({ pageId, activePage }) => {
-    if (pageId === activePage) {
-      return LinkColorActive;
-    }
-    return LinkColor;
-  }}
-`;
-
 const LogoContainer = styled.a`
   cursor: pointer;
   display: flex;
@@ -61,16 +39,11 @@ const LogoContainer = styled.a`
 function Header() {
   const { localizations } = useContext(I18nContext);
   const { header } = localizations;
-  const [activePage, setActivePage] = useState('#home');
+  const [activePage, setActivePage] = useState('home');
 
-  const handleScroll = () => {
-    setActivePage(window.location.hash);
+  const handleNavlinkOnClick = (event: React.MouseEvent<HTMLAnchorElement>, pageId: string) => {
+    setActivePage(pageId);
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
 
   return (
     <Nav>
@@ -78,41 +51,41 @@ function Header() {
         {/* eslint-disable @next/next/no-img-element */}
         <img src="venda_logo.svg" width={111} height={144} alt="Venda logo" />
       </LogoContainer>
-      <LinkContent
-        href="#marketing-communications"
-        pageId="#marketing-communications"
+      <NavLink
+        pageId="marketing-communications"
         activePage={activePage}
+        onClick={handleNavlinkOnClick}
       >
         {header.marketingCommmunications}
-      </LinkContent>
-      <LinkContent
-        href="#translation-services"
-        pageId="#translation-services"
+      </NavLink>
+      <NavLink
+        pageId="translation-services"
         activePage={activePage}
+        onClick={handleNavlinkOnClick}
       >
         {header.translations}
-      </LinkContent>
-      <LinkContent
-        href="#outsource-your-project"
-        pageId="#outsource-your-project"
+      </NavLink>
+      <NavLink
+        pageId="outsource-your-project"
         activePage={activePage}
+        onClick={handleNavlinkOnClick}
       >
         {header.outsourceYourProject}
-      </LinkContent>
-      <LinkContent
-        href="#briefly"
-        pageId="#briefly"
+      </NavLink>
+      <NavLink
+        pageId="briefly"
         activePage={activePage}
+        onClick={handleNavlinkOnClick}
       >
         {header.briefly}
-      </LinkContent>
-      <LinkContent
-        href="#contact"
-        pageId="#contact"
+      </NavLink>
+      <NavLink
+        pageId="contact"
         activePage={activePage}
+        onClick={handleNavlinkOnClick}
       >
         {header.contact}
-      </LinkContent>
+      </NavLink>
     </Nav>
   );
 }
