@@ -14,6 +14,15 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media only screen and (max-width: 1550px) {
+    width: 1120px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
+
 `;
 
 export const HeaderBackground = styled.div`

@@ -10,10 +10,16 @@ export const RootContainer = styled.div`
 export const PageContainer = styled.div`
   display: flex;
   justify-content: center;
+  width: 100%;
 `;
 
 export const PageContent = styled.div`
   width: 1420px;
+
+  @media only screen and (max-width: 1550px) {
+    width: 1120px;
+  }
+
 `;
 
 export const Layout = styled.div`

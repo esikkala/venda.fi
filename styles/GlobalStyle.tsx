@@ -13,8 +13,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    min-width: 1550px;
-    overflow-x: auto;
     font-family: 'Roboto', sans-serif;
   }
 `;
