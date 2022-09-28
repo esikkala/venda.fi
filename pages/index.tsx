@@ -37,7 +37,19 @@ const Page = styled.div`
     display: flex;
     justify-content: center;
   }
+`;
 
+const MobileImageContainer = styled.div`
+   @media only screen and (min-width: 1200px) {
+    display: none;
+  }
+  margin-bottom: 1rem;
+`;
+
+const DesktopImageContainer = styled.div`
+   @media only screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 function Home(): JSX.Element {
@@ -61,8 +73,15 @@ function Home(): JSX.Element {
         <PageContent>
           <Page id="home">
             <Layout>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              {/* <img src="tehokas_luova.svg" width={469} height={200} alt="Tehokas logo" /> */}
+
+              <MobileImageContainer>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="tehokas_luova.svg" width={359} height={90} alt="Tehokas logo" />
+              </MobileImageContainer>
+              <DesktopImageContainer>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="tehokas_luova.svg" width={469} height={200} alt="Tehokas logo" />
+              </DesktopImageContainer>
               <TextContainer>
                 <H1>
                   {frontPage.heading}

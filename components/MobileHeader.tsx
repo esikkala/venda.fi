@@ -40,6 +40,7 @@ const ButtonContainer = styled.a`
 const LogoAndButtonContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
   `;
 
 /**
@@ -63,13 +64,13 @@ function MobileHeader() {
           onClick={(event) => handleNavlinkOnClick(event, '#home')}
         >
           {/* eslint-disable @next/next/no-img-element */}
-          <img src="venda_logo.svg" width={81} height={114} alt="Venda logo" />
+          <img src="venda_logo.svg" width={57} height={90} alt="Venda logo" />
         </ButtonContainer>
         <ButtonContainer
           onClick={() => setIsOpen(!isOpen)}
         >
           {/* eslint-disable @next/next/no-img-element */}
-          {isOpen && <img src="close_icon.svg" width={81} height={114} alt="Close" />}
+          {isOpen && <img src="close_icon.svg" width={80} height={80} alt="Close" />}
           {!isOpen && <img src="menu_viivat.svg" width={80} height={80} alt="Menu" />}
         </ButtonContainer>
       </LogoAndButtonContainer>
