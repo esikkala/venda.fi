@@ -57,9 +57,13 @@ export const TextContainer = styled.div`
   overflow-y: auto;
   color: ${({ theme }) => theme.colors.black};
   @media only screen and (max-width: 850px) {
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 0.5rem;
+    letter-spacing: normal;
     width: 100%;
+    padding-bottom: 2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 `;
 

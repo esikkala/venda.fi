@@ -24,7 +24,7 @@ function MessukeskusB2BApp({ Component, pageProps }: AppPropsWithLayout) {
       <GlobalStyle />
       <I18nProvider locale={defaultLocale}>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         {getLayout(<Component {...pageProps} />)}
