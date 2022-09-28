@@ -20,6 +20,12 @@ export const PageContent = styled.div`
     width: 1120px;
   }
 
+  @media only screen and (max-width: 850px) {
+    width: 100%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+  }
+
 `;
 
 export const Layout = styled.div`
@@ -27,6 +33,11 @@ export const Layout = styled.div`
   align-items: center;
   flex-direction: column;
   padding-top: 190px;
+
+  @media only screen and (max-width: 850px) {
+   padding-top: 100px;
+   width: 100%
+  }
 `;
 
 export const LeftLayout = styled(Layout)`
@@ -40,6 +51,10 @@ export const TextContainer = styled.div`
   letter-spacing: 0.7px;
   width: 740px;
   color: ${({ theme }) => theme.colors.black};
+  @media only screen and (max-width: 850px) {
+    width: 100%;
+    font-size: 20px;
+  }
 `;
 
 export const H1 = styled.h1`
@@ -57,9 +72,13 @@ export const H2 = styled.h2`
 `;
 
 export const P = styled.p`
-  line-height: 1.75rem;
+  line-height: 1.5;
   margin-bottom:  1.5rem;
   font-weight: 300;
+  /* @media only screen and (max-width: 850px) {
+    width: 100%;
+    line-height: 1.5;
+  } */
 `;
 
 export const BackgroundImage = styled.div`

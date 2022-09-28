@@ -27,9 +27,10 @@ import Header, { HeaderBackground } from '../components/Header';
 
 const Page = styled.div`
   height: 100vh;
-  @media screen and ( max-height: 800px ) {
+  width: 100%;
+  /* @media screen and ( max-height: 800px ) {
     height: fit-content;
-  }
+  } */
 `;
 
 function Home(): JSX.Element {
@@ -54,7 +55,7 @@ function Home(): JSX.Element {
             <Layout>
               <SpacerSmall />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="tehokas_luova.svg" width={469} height={200} alt="Tehokas logo" />
+              {/* <img src="tehokas_luova.svg" width={469} height={200} alt="Tehokas logo" /> */}
               <TextContainer>
                 <H1>
                   {frontPage.heading}

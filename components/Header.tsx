@@ -32,6 +32,10 @@ export const HeaderBackground = styled.div`
   height: 190px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
+
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 const LogoContainer = styled.a`
