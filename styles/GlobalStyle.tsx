@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     @media screen and (prefers-reduced-motion: reduce) {
       scroll-behavior: auto;
-    }
+    }  
   }
 
   body {

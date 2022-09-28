@@ -22,27 +22,30 @@ export const PageContent = styled.div`
 
   @media only screen and (max-width: 850px) {
     width: 100%;
-    /* margin-left: 20%;
-    margin-right: 20%; */
   }
 
 `;
 
 export const Layout = styled.div`
+  height: calc(100% - 190px);
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 190px;
 
   @media only screen and (max-width: 850px) {
-   padding-top: 100px;
-   width: 100%
+    padding-top: 150px;
+    height: calc(100% - 150px);
+    width: calc(100% - 60px);
   }
 `;
 
 export const LeftLayout = styled(Layout)`
   align-items: flex-start;
   padding-left: 200px;
+  @media only screen and (max-width: 850px) {
+    padding-left: 0;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -50,10 +53,13 @@ export const TextContainer = styled.div`
   font-size: 18px;
   letter-spacing: 0.7px;
   width: 740px;
+  height: 100%;
+  overflow-y: auto;
   color: ${({ theme }) => theme.colors.black};
   @media only screen and (max-width: 850px) {
-    width: 100%;
     font-size: 20px;
+    margin-top: 0.5rem;
+    width: 100%;
   }
 `;
 

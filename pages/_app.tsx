@@ -2,6 +2,7 @@ import React from 'react';
 import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../styles/GlobalStyle';
 import defaultTheme from '../themes/defaultTheme';
@@ -22,6 +23,9 @@ function MessukeskusB2BApp({ Component, pageProps }: AppPropsWithLayout) {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <I18nProvider locale={defaultLocale}>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+        </Head>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         {getLayout(<Component {...pageProps} />)}
       </I18nProvider>

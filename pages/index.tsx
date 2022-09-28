@@ -24,13 +24,20 @@ import {
   SpacerSmall,
 } from '../components/Common';
 import Header, { HeaderBackground } from '../components/Header';
+import MobileHeader from '../components/MobileHeader';
 
 const Page = styled.div`
   height: 100vh;
+  min-height: 100vh;            
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
   width: 100%;
-  /* @media screen and ( max-height: 800px ) {
-    height: fit-content;
-  } */
+  @media only screen and (max-width: 850px) {
+    display: flex;
+    justify-content: center;
+  }
+
 `;
 
 function Home(): JSX.Element {
@@ -42,6 +49,7 @@ function Home(): JSX.Element {
 
   return (
     <BackgroundImage>
+      <MobileHeader />
       <HeaderBackground>
         <PageContainer>
           <PageContent>
@@ -53,7 +61,6 @@ function Home(): JSX.Element {
         <PageContent>
           <Page id="home">
             <Layout>
-              <SpacerSmall />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               {/* <img src="tehokas_luova.svg" width={469} height={200} alt="Tehokas logo" /> */}
               <TextContainer>

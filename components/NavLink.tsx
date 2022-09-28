@@ -20,6 +20,13 @@ const Link = styled.a<LinkProps>`
   font-size: 17px;
   letter-spacing: 1px;
   text-decoration: none;
+
+  @media only screen and (max-width: 1200px) {
+    text-align: center;
+    color: ${({ theme }) => theme.colors.white};
+    margin-top: 1rem;
+
+  }
   
     
   ${({ pageId, activePage }) => {
