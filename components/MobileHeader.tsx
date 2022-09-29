@@ -33,8 +33,11 @@ const ButtonContainer = styled.a`
     display: flex;
     align-items: center;
     text-decoration: none;
-    z-index: 1;
-    padding: 1rem;
+    
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
   `;
 
 const LogoAndButtonContainer = styled.div`
@@ -64,7 +67,7 @@ function MobileHeader() {
           onClick={(event) => handleNavlinkOnClick(event, '#home')}
         >
           {/* eslint-disable @next/next/no-img-element */}
-          <img src="venda_logo.svg" width={57} height={90} alt="Venda logo" />
+          <img src="venda_logo.svg" width={52} height={85} alt="Venda logo" />
         </ButtonContainer>
         <ButtonContainer
           onClick={() => setIsOpen(!isOpen)}

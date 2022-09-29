@@ -34,7 +34,7 @@ export const Layout = styled.div`
   padding-top: 190px;
 
   @media only screen and (max-width: 850px) {
-    padding-top: 150px;
+    padding-top: 120px;
     height: calc(100% - 150px);
     width: calc(100% - 60px);
   }
@@ -58,12 +58,12 @@ export const TextContainer = styled.div`
   color: ${({ theme }) => theme.colors.black};
   @media only screen and (max-width: 850px) {
     font-size: 14px;
-    margin-top: 0.5rem;
+    margin-top: 0;
     letter-spacing: normal;
-    width: 100%;
+    width: calc(100% - 2rem);
     padding-bottom: 2rem;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 `;
 
@@ -72,6 +72,21 @@ export const H1 = styled.h1`
   font-size: inherit;
   text-align: left;
   margin-bottom:  1.5rem;
+`;
+
+export const MobileH1 = styled.h2`
+  background-color: ${({ theme }) => theme.colors.orange};
+  color: ${({ theme }) => theme.colors.white};
+  letter-spacing: 1.3px;
+  font-size: 14px;
+  margin-left: -30px;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  @media only screen and (min-width: 850px) {
+    display: none;
+  }
 `;
 
 export const H2 = styled.h2`
@@ -94,6 +109,9 @@ export const P = styled.p`
 export const BackgroundImage = styled.div`
   position: relative;
   background-image: url('background.png');
+  @media only screen and (max-width: 500px) {
+    background-image: url('mobiili_tausta.png');
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -105,8 +123,7 @@ export const Bold = styled(P)`
 `;
 
 export const Ul = styled.ul`
-  list-style-position: inside;
-  padding-left: 0;
+  padding-left: 1rem;
 `;
 
 export const Li = styled.li`
@@ -114,10 +131,18 @@ export const Li = styled.li`
    color: ${({ theme }) => theme.colors.orange};
   }
   margin-bottom: 0.5rem;
+  line-height: 1.5;
+  list-style-position: outside;
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 3px;
+  }
 `;
 
 export const Spacer = styled.div`
   height: 4rem;
+  @media only screen and (max-width: 800px) {
+    height: 1rem;
+  }
 `;
 
 export const SpacerSmall = styled.div`
@@ -137,6 +162,9 @@ export const ContactInfo = styled(P)`
 export const FirstRow = styled(H1)`
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+  @media only screen and (max-width: 800px) {
+    line-height: 1.5;
+  }
 `;
 
 export const SecondRow = styled(Bold)`

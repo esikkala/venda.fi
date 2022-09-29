@@ -15,7 +15,7 @@ type LinkProps = {
 };
 
 const Link = styled.a<LinkProps>`
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  /* font-family: 'Helvetica', 'Arial', sans-serif; */
   font-weight: 600;
   font-size: 17px;
   letter-spacing: 1px;

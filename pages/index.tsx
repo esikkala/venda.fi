@@ -11,6 +11,7 @@ import {
   LeftLayout,
   TextContainer,
   H1,
+  MobileH1,
   H2,
   P,
   Ul,
@@ -56,13 +57,13 @@ function Home(): JSX.Element {
   const { localizations } = useContext(I18nContext);
   const {
     frontPage, marketingCommunications, translationServices,
-    outsourceYourProject, briefly, contact,
+    outsourceYourProject, briefly, contact, header,
   } = localizations;
 
   return (
     <BackgroundImage>
-      <MobileHeader />
       <HeaderBackground>
+        <MobileHeader />
         <PageContainer>
           <PageContent>
             <Header />
@@ -73,7 +74,6 @@ function Home(): JSX.Element {
         <PageContent>
           <Page id="home">
             <Layout>
-
               <MobileImageContainer>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="tehokas_luova.svg" width={359} height={90} alt="Tehokas logo" />
@@ -100,6 +100,7 @@ function Home(): JSX.Element {
           </Page>
           <Page id="marketing-communications">
             <LeftLayout>
+              <MobileH1>{header.marketingCommmunications}</MobileH1>
               <TextContainer>
                 <H2>
                   {marketingCommunications.heading}
@@ -122,6 +123,7 @@ function Home(): JSX.Element {
           </Page>
           <Page id="translation-services">
             <LeftLayout>
+              <MobileH1>{header.translations}</MobileH1>
               <TextContainer>
                 <H2>
                   {translationServices.heading}
@@ -137,6 +139,7 @@ function Home(): JSX.Element {
           </Page>
           <Page id="outsource-your-project">
             <LeftLayout>
+              <MobileH1>{header.outsourceYourProject}</MobileH1>
               <TextContainer>
                 <FirstRow>
                   {outsourceYourProject.heading}
@@ -155,6 +158,7 @@ function Home(): JSX.Element {
           </Page>
           <Page id="briefly">
             <LeftLayout>
+              <MobileH1>{header.briefly}</MobileH1>
               <TextContainer>
                 <H2>
                   {briefly.heading}
@@ -184,6 +188,7 @@ function Home(): JSX.Element {
           </Page>
           <Page id="contact">
             <LeftLayout>
+              <MobileH1>{header.contact}</MobileH1>
               <TextContainer>
                 <ContactHeading>
                   {contact.heading}
