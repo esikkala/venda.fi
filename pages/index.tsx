@@ -34,7 +34,7 @@ const Page = styled.div`
   min-height: -webkit-fill-available;
   min-height: fill-available;
   width: 100%;
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1200px) {
     display: flex;
     justify-content: center;
   }

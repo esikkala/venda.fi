@@ -20,7 +20,7 @@ export const PageContent = styled.div`
     width: 1120px;
   }
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1200px) {
     width: 100%;
   }
 
@@ -33,7 +33,7 @@ export const Layout = styled.div`
   flex-direction: column;
   padding-top: 190px;
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1200px) {
     padding-top: 120px;
     height: calc(100% - 150px);
     width: calc(100% - 60px);
@@ -43,7 +43,7 @@ export const Layout = styled.div`
 export const LeftLayout = styled(Layout)`
   align-items: flex-start;
   padding-left: 200px;
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1200px) {
     padding-left: 0;
   }
 `;
@@ -56,7 +56,7 @@ export const TextContainer = styled.div`
   height: 100%;
   overflow-y: auto;
   color: ${({ theme }) => theme.colors.black};
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1200px) {
     font-size: 14px;
     margin-top: 0;
     letter-spacing: normal;
@@ -84,7 +84,7 @@ export const MobileH1 = styled.h2`
   padding-right: 1rem;
   padding-top: .25rem;
   padding-bottom: .25rem;
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 1200px) {
     display: none;
   }
 `;
@@ -100,10 +100,6 @@ export const P = styled.p`
   line-height: 1.5;
   margin-bottom:  1.5rem;
   font-weight: 300;
-  /* @media only screen and (max-width: 850px) {
-    width: 100%;
-    line-height: 1.5;
-  } */
 `;
 
 export const BackgroundImage = styled.div`
