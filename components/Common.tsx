@@ -123,7 +123,11 @@ export const Bold = styled(P)`
 `;
 
 export const Ul = styled.ul`
-  padding-left: 1rem;
+  list-style-position: inside;
+  padding-left: 0;
+  @media only screen and (max-width: 800px) {
+    padding-left: 1rem;
+  }
 `;
 
 export const Li = styled.li`
@@ -132,9 +136,9 @@ export const Li = styled.li`
   }
   margin-bottom: 0.5rem;
   line-height: 1.5;
-  list-style-position: outside;
   @media only screen and (max-width: 800px) {
     margin-bottom: 3px;
+    list-style-position: outside;
   }
 `;
 
