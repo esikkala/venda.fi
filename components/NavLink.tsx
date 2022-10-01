@@ -22,10 +22,11 @@ const Link = styled.a<LinkProps>`
   text-decoration: none;
 
   @media only screen and (max-width: 1200px) {
-    text-align: center;
+    /* text-align: center; */
     color: ${({ theme }) => theme.colors.white};
-    margin-top: 1rem;
-
+    margin-top: 0.5rem;
+    font-size: 14px;
+    letter-spacing: 1.3px;
   }
   
     

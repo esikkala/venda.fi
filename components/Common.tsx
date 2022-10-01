@@ -54,7 +54,7 @@ export const TextContainer = styled.div`
   letter-spacing: 0.7px;
   width: 740px;
   height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   color: ${({ theme }) => theme.colors.black};
   @media only screen and (max-width: 1200px) {
     font-size: 14px;

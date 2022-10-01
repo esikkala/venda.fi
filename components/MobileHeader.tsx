@@ -36,7 +36,7 @@ const ButtonContainer = styled.a`
     
     padding-left: 2rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 0.5rem; */
     padding-right: 1rem;
   `;
 
@@ -45,6 +45,21 @@ const LogoAndButtonContainer = styled.div`
     justify-content: space-between;
     align-items: center;
   `;
+
+const LinkContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const InnerLinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const CloseImg = styled.img`
+  margin-right: 13px;
+`;
 
 /**
    * A functional component for creating a mobile navigation header.
@@ -73,48 +88,50 @@ function MobileHeader() {
           onClick={() => setIsOpen(!isOpen)}
         >
           {/* eslint-disable @next/next/no-img-element */}
-          {isOpen && <img src="close_icon.svg" width={80} height={80} alt="Close" />}
+          {isOpen && <CloseImg src="close_icon.svg" width={57} height={57} alt="Close" />}
           {!isOpen && <img src="menu_viivat.svg" width={80} height={80} alt="Menu" />}
         </ButtonContainer>
       </LogoAndButtonContainer>
       {isOpen && (
-      <>
-        <NavLink
-          pageId="marketing-communications"
-          activePage={activePage}
-          onClick={handleNavlinkOnClick}
-        >
-          {header.marketingCommmunications}
-        </NavLink>
-        <NavLink
-          pageId="translation-services"
-          activePage={activePage}
-          onClick={handleNavlinkOnClick}
-        >
-          {header.translations}
-        </NavLink>
-        <NavLink
-          pageId="outsource-your-project"
-          activePage={activePage}
-          onClick={handleNavlinkOnClick}
-        >
-          {header.outsourceYourProject}
-        </NavLink>
-        <NavLink
-          pageId="briefly"
-          activePage={activePage}
-          onClick={handleNavlinkOnClick}
-        >
-          {header.briefly}
-        </NavLink>
-        <NavLink
-          pageId="contact"
-          activePage={activePage}
-          onClick={handleNavlinkOnClick}
-        >
-          {header.contact}
-        </NavLink>
-      </>
+        <LinkContainer>
+          <InnerLinkContainer>
+            <NavLink
+              pageId="marketing-communications"
+              activePage={activePage}
+              onClick={handleNavlinkOnClick}
+            >
+              {header.marketingCommmunications}
+            </NavLink>
+            <NavLink
+              pageId="translation-services"
+              activePage={activePage}
+              onClick={handleNavlinkOnClick}
+            >
+              {header.translations}
+            </NavLink>
+            <NavLink
+              pageId="outsource-your-project"
+              activePage={activePage}
+              onClick={handleNavlinkOnClick}
+            >
+              {header.outsourceYourProject}
+            </NavLink>
+            <NavLink
+              pageId="briefly"
+              activePage={activePage}
+              onClick={handleNavlinkOnClick}
+            >
+              {header.briefly}
+            </NavLink>
+            <NavLink
+              pageId="contact"
+              activePage={activePage}
+              onClick={handleNavlinkOnClick}
+            >
+              {header.contact}
+            </NavLink>
+          </InnerLinkContainer>
+        </LinkContainer>
       )}
     </Nav>
   );

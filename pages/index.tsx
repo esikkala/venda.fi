@@ -28,12 +28,12 @@ import Header, { HeaderBackground } from '../components/Header';
 import MobileHeader from '../components/MobileHeader';
 
 const Page = styled.div`
+  width: 100%;
   height: 100vh;
   min-height: 100vh;            
   min-height: -moz-available;
   min-height: -webkit-fill-available;
   min-height: fill-available;
-  width: 100%;
   @media only screen and (max-width: 1200px) {
     display: flex;
     justify-content: center;
@@ -45,6 +45,10 @@ const MobileImageContainer = styled.div`
     display: none;
   }
   margin-bottom: 1rem;
+`;
+
+const MobileBottomSpacer = styled.div`
+  height: 500px;
 `;
 
 const DesktopImageContainer = styled.div`
@@ -213,6 +217,7 @@ function Home(): JSX.Element {
                   {contact.country}
                 </ContactInfo>
               </TextContainer>
+              <MobileBottomSpacer />
             </LeftLayout>
           </Page>
         </PageContent>
