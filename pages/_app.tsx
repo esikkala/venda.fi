@@ -24,6 +24,7 @@ function MessukeskusB2BApp({ Component, pageProps }: AppPropsWithLayout) {
       <GlobalStyle />
       <I18nProvider locale={defaultLocale}>
         <Head>
+          <title>Venda Finland Oy</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
