@@ -80,11 +80,11 @@ function Home(): JSX.Element {
             <Layout>
               <MobileImageContainer>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="tehokas_luova.svg" width={359} height={90} alt="Tehokas logo" />
+                <img src="tehokas_luova_con.svg" width={359} height={90} alt="Tehokas logo" />
               </MobileImageContainer>
               <DesktopImageContainer>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="tehokas_luova.svg" width={469} height={200} alt="Tehokas logo" />
+                <img src="tehokas_luova_con.svg" width={469} height={200} alt="Tehokas logo" />
               </DesktopImageContainer>
               <TextContainer>
                 <H1>
